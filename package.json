@@ -1,0 +1,15 @@
+{
+  "name": "rally-home-care",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rally Care: shared med schedules, tasks and a care log for families looking after an aging parent.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.169.0"
+  }
+}

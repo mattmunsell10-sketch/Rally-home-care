@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rally-home-care",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "rally",
+      // Paste the Database ID from Cloudflare dashboard > Storage & Databases > D1 > rally.
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "observability": { "enabled": true }
+  // Secrets are set in the Cloudflare dashboard, never in this file:
+  //   STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
+  // Optional plain variables: STRIPE_PRICE_MONTHLY, STRIPE_PRICE_YEARLY
+}
