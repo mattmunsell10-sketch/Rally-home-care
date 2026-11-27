@@ -34,7 +34,7 @@ To try checkout locally, add `STRIPE_SECRET_KEY=sk_test_...` to `.dev.vars`. Nev
 
 ### Cloudflare
 
-1. **Create the database:** go to Storage & Databases > D1 > Create, and name it `rally`. Copy its **Database ID** into `wrangler.jsonc` (`database_id`). The ID is not a secret.
+1. **Create the database:** go to Storage & Databases > D1 > Create, and name it `rally`. Done: its ID is already in `wrangler.jsonc`.
 2. **Connect the repo:** go to Workers & Pages > Create > Import a repository, and pick `rally-home-care`. Keep the deploy command `npx wrangler deploy`. From then on, every push to `main` deploys.
 3. Your app is live at `https://rally-home-care.<your-subdomain>.workers.dev`. You can add `rallycare.app` later under the Worker's Settings > Domains & Routes.
 

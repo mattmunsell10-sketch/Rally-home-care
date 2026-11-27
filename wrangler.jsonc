@@ -13,8 +13,8 @@
     {
       "binding": "DB",
       "database_name": "rally",
-      // Paste the Database ID from Cloudflare dashboard > Storage & Databases > D1 > rally.
-      "database_id": "00000000-0000-0000-0000-000000000000"
+      // D1 database "rally" (ID is not a secret).
+      "database_id": "c60472fc-0ff2-48f5-a3fc-6548572b1b58"
     }
   ],
   "observability": { "enabled": true }
