@@ -17,8 +17,12 @@
       "database_id": "c60472fc-0ff2-48f5-a3fc-6548572b1b58"
     }
   ],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Stripe price IDs for "Rally Family Plus" (test mode). Swap for live-mode IDs at launch.
+  "vars": {
+    "STRIPE_PRICE_MONTHLY": "price_1UgY2xLGUY9XfjVbUdVeHVrg",
+    "STRIPE_PRICE_YEARLY": "price_1UgY2pLGUY9XfjVbdQQPysek"
+  }
   // Secrets are set in the Cloudflare dashboard, never in this file:
   //   STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
-  // Optional plain variables: STRIPE_PRICE_MONTHLY, STRIPE_PRICE_YEARLY
 }
